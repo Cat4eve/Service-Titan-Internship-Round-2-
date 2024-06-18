@@ -15,8 +15,8 @@ Q2. Describe at least 2 challenges that you will encounter when using the tool(s
 and try to think of how you can overcome those challenges.
 
 A2. Below I will describe two challanges that I can face and my strategies for their mitigation.
-1) **Challange of data extraction from PDFs** - This issue is related but not limited on PyMuPDF library, in fact all python libraries can have difficulties of extracting the information from manual PDFs because of the font, language, tables, etc. To solve this issue I would likely use some OCR tools for preprocessing of the PDFs to reduce the chances of having wrong or corrupted outputs in the end. Considering the fact that other tools (especially Milvus) requires having a large dataset, the probability of facing such a challange significantly increases.
-2)  
+1) **Challange of data extraction from PDFs** - This issue is related but not limited on PyMuPDF library, in fact all python libraries can have difficulties of extracting the information from manual PDFs because of the font, language, tables, etc. Considering the fact that other tools (especially Milvus) requires having a large dataset, the probability of facing such a challange significantly increases. To solve this issue I would likely use some OCR tools for preprocessing of the PDFs to reduce the chances of having wrong or corrupted outputs in the end.
+2) **Challange of working with high dimensional data for Vector DBs** - This issue is related to Milvus Vector DB which is using a lot of data to generate high dimensional vectors which later needs to be used for the search. The challange is that the higher the dimension of the vectors the more time search operation in vector space will take. The solution of the challenge is to configure Milvus in the way to have the ```K``` dimension vectors where ```K``` is not big enough to cause computational issues and not small enough to be seperable.
 
 
 Q3. Once you complete choosing the tools, present 5 examples of complex questions that the chatbot you designed will be able to answer, and 5 examples of questions that your chatbot will fail to answer. Present reasons why.
