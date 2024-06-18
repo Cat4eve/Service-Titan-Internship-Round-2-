@@ -14,7 +14,9 @@ A1. I will begin with describing the RAG system components one by one and discus
 Q2. Describe at least 2 challenges that you will encounter when using the tool(s) that you chose (e.g. when using openAI embeddings, the vector size is too long …), 
 and try to think of how you can overcome those challenges.
 
-A2.
+A2. Below I will describe two challanges that I can face and my strategies for their mitigation.
+1) **Challange of data extraction from PDFs** - This issue is related but not limited on PyMuPDF library, in fact all python libraries can have difficulties of extracting the information from manual PDFs because of the font, language, tables, etc. To solve this issue I would likely use some OCR tools for preprocessing of the PDFs to reduce the chances of having wrong or corrupted outputs in the end. Considering the fact that other tools (especially Milvus) requires having a large dataset, the probability of facing such a challange significantly increases.
+2)  
 
 
 Q3. Once you complete choosing the tools, present 5 examples of complex questions that the chatbot you designed will be able to answer, and 5 examples of questions that your chatbot will fail to answer. Present reasons why.
